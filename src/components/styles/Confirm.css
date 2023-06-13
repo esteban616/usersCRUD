@@ -1,0 +1,25 @@
+.delete_container{
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    background-color: #0004;
+    top: 0;
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.delete{
+    background-color: white;
+    padding: 2em;
+    border-radius: 0.4em;
+    width: 100%;
+    max-width: 350px;
+    
+}
+
+.delete_close{
+    transform: scale(0);
+}
