@@ -5,11 +5,9 @@ const UserCard = ({
   user,
   deleteUserByid,
   setUpdateInfo,
-  setformClose,
-  setDeleteClose,
+  setformClose
 }) => {
   const handleDelete = () => {
-    setDeleteClose(false);
     deleteUserByid("/users", user.id);
   };
   const handleEdit = () => {

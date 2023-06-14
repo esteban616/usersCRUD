@@ -3,12 +3,10 @@ import './App.css'
 import useFetch from './hooks/useFetch'
 import FormUsers from './components/FormUsers'
 import UserCard from './components/userCard'
-import Confirm from './components/Confirm'
 
 function App() {
   const [formClose, setformClose] = useState(true)
   const [updateInfo, setUpdateInfo] = useState()
-  const [deleteClose, setDeleteClose] = useState(true)
   const baseUrl = 'https://users-crud.academlo.tech/'
 
   const handleOpen=()=>{
@@ -51,15 +49,12 @@ function App() {
             deleteUserByid={deleteUserByid}
             setUpdateInfo={setUpdateInfo}
             setformClose={setformClose}
-            setDeleteClose={setDeleteClose}
            
             />
           ))
         }
       </div>
-      <div className={`delete_container ${deleteClose && "delete_close"}`}>
-        <Confirm setDeleteClose={setDeleteClose}/>
-      </div>
+     
     </div>
   )
 }
