@@ -7,7 +7,7 @@ import UserCard from './components/userCard'
 function App() {
   const [formClose, setformClose] = useState(true)
   const [updateInfo, setUpdateInfo] = useState()
-  const baseUrl = 'https://users-crud.academlo.tech/'
+  const baseUrl = 'https://users-crud-b1k4.onrender.com/api/v1'
 
   const handleOpen=()=>{
     setformClose(false)
